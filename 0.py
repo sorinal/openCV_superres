@@ -10,7 +10,6 @@ sr = cv2.dnn_superres.DnnSuperResImpl_create()
 sr.readModel('EDSR_x2.pb')
 sr.setModel("edsr", 2)
 up = sr.upsample(im)
-# resized = cv2.resize(im,dsize=None,fx=4,fy=4)
 
 plt.imshow(up)
 plt.show()
